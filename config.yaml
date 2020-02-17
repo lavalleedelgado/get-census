@@ -1,9 +1,7 @@
 # Configuration for requeset.sh.
 
 # Patrick Lavallee Delgado
-# Harris School of Public Policy
 # University of Chicago
-# February 2020
 
 # Specify the geography and the name of the table in which to store these data.
 geography: tract

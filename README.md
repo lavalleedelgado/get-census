@@ -1,6 +1,6 @@
 # request-census
 Patrick Lavallee Delgado \
-MSCAPP candidate, University of Chicago
+University of Chicago
 
 ## Overview
 

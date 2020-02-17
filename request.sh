@@ -4,8 +4,6 @@
 # NB: A future version will sum variables that share a label.
 # 
 # Patrick Lavallee Delgado
-# Jamie Saxon, Ph.D.
-# Harris School of Public Policy
 # University of Chicago
 # February 2020
 # 
