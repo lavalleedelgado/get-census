@@ -6,9 +6,10 @@
 # Specify the geography and the name of the table in which to store these data.
 geography: tract
 table: profile_by_tract
+endpoint: https://api.census.gov/data/!!YEAR!!/acs/acs5/profile?
 
-# Specify API endpoints and variables by year.
-2010: https://api.census.gov/data/2010/acs/acs5/profile?
+# Map variable identifiers to readable labels by year.
+2010: 
   DP05_0065E: population
   DP05_0072PE: white
   DP05_0073PE: black
@@ -22,7 +23,7 @@ table: profile_by_tract
   DP02_0084E: moved_cross_state
   DP02_0079E: stayed
   DP04_0050E: housing_units
-2011: https://api.census.gov/data/2011/acs/acs5/profile?
+2011:
   DP05_0065E: population
   DP05_0072PE: white
   DP05_0073PE: black
@@ -36,7 +37,7 @@ table: profile_by_tract
   DP02_0084E: moved_cross_state
   DP02_0079E: stayed
   DP04_0050E: housing_units
-2012: https://api.census.gov/data/2012/acs/acs5/profile?
+2012:
   DP05_0065E: population
   DP05_0072PE: white
   DP05_0073PE: black
@@ -50,7 +51,7 @@ table: profile_by_tract
   DP02_0084E: moved_cross_state
   DP02_0079E: stayed
   DP04_0050E: housing_units
-2013: https://api.census.gov/data/2013/acs/acs5/profile?
+2013:
   DP05_0065E: population
   DP05_0072PE: white
   DP05_0073PE: black
@@ -64,7 +65,7 @@ table: profile_by_tract
   DP02_0084E: moved_cross_state
   DP02_0079E: stayed
   DP04_0050E: housing_units
-2014: https://api.census.gov/data/2014/acs/acs5/profile?
+2014:
   DP05_0065E: population
   DP05_0072PE: white
   DP05_0073PE: black
@@ -78,7 +79,7 @@ table: profile_by_tract
   DP02_0084E: moved_cross_state
   DP02_0079E: stayed
   DP04_0050E: housing_units
-2015: https://api.census.gov/data/2015/acs/acs5/profile?
+2015:
   DP05_0065E: population
   DP05_0072PE: white
   DP05_0073PE: black
@@ -92,7 +93,7 @@ table: profile_by_tract
   DP02_0084E: moved_cross_state
   DP02_0079E: stayed
   DP04_0050E: housing_units
-2016: https://api.census.gov/data/2016/acs/acs5/profile?
+2016:
   DP05_0065E: population
   DP05_0072PE: white
   DP05_0073PE: black
@@ -106,7 +107,7 @@ table: profile_by_tract
   DP02_0084E: moved_cross_state
   DP02_0079E: stayed
   DP04_0050E: housing_units
-2017: https://api.census.gov/data/2017/acs/acs5/profile?
+2017:
   DP05_0070E: population
   DP05_0077PE: white
   DP05_0078PE: black
