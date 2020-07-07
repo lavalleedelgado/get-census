@@ -1,4 +1,4 @@
-# request-census
+# get-census
 Patrick Lavallee Delgado \
 University of Chicago
 
@@ -9,7 +9,7 @@ Request data from a US Census Bureau API per specification in a YAML configurati
 The script `get_census.sh` takes two arguments that identify the locations of the configuration file and the SQLite database, respectively. Only the first is required.
 
 ```
-$ sh request.sh config.yaml
+$ sh get_census.sh config.yaml
 ```
 
 The file `config.yaml` offers the geography by which to request the API, the table in which to store the results, the endpoint for the API, and a mapping of variable codes to readable labels by year. Note the endpoint has the placeholder `!!YEAR!!` to represent the year in the data. 
