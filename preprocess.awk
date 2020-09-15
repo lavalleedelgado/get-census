@@ -1,5 +1,5 @@
 BEGIN {
-    FS="\",\""
+    FS="\t"
     OFS="|"
     if (geo == "tract") FIPS_N=3
     else if (geo == "county") FIPS_N=2

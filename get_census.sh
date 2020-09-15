@@ -85,7 +85,8 @@ do
         # Request the data and load the response into the database.
         wget -qO- $call \
         | tail -n +2 \
-        | sed -Ee 's/^\[{1,2}"//' -Ee 's/"\]{1,2},?$//' \
+        | sed -Ee 's/^\[{1,2}//' -Ee 's/\]{1,2},?$//' \
+        | sed -e 's/$/,/' -Ee $'s/("([^"]*)")?,/\\2\t/g' \
         | awk -v yr=$year -v geo=$geography -f $awk_path \
         | sqlite3 $db_path '.import /dev/stdin '$table
     done
