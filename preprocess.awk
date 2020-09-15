@@ -6,10 +6,10 @@ BEGIN {
     else if (geo == "state") FIPS_N=1
 } {
     for (i=FIPS_N; i > 0; i--) {
-        FIPS_CODE = FIPS_CODE $(NF - i + 1)
-        $(NF - i + 1)=""
+        FIPS_CODE = FIPS_CODE $(NF - i)
+        $(NF - i)=""
     }
-    NF=(NF - FIPS_N)
+    NF=(NF - FIPS_N - 1)
     print yr, FIPS_CODE, $0
     FIPS_CODE=""
 }
